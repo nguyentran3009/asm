@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Tên khoản chi -->
+    <EditText
+        android:id="@+id/sourceInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Expenditure name"
+        android:inputType="text" />
+
+    <!-- Ngày bắt đầu -->
+    <TextView
+        android:id="@+id/startDateInput"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="12dp"
+        android:background="@drawable/border"
+        android:hint="Start Date"
+        android:textColor="#000"
+        android:minHeight="48dp"
+        android:gravity="center_vertical"
+        android:drawableEnd="@drawable/calendartu"
+        android:drawablePadding="8dp" />
+
+    <!-- Ngày kết thúc -->
+
+
+    <!-- Lựa chọn danh mục -->
+    <TextView
+        android:id="@+id/endDateInput"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/border"
+        android:drawableEnd="@drawable/calendartu"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:hint="End Date"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:textColor="#000" />
+
+    <Spinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:minHeight="48dp"
+        android:background="@drawable/border"
+        android:spinnerMode="dropdown" />
+
+    <!-- Ghi chú -->
+    <EditText
+        android:id="@+id/noteInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Note"
+        android:inputType="text" />
+
+    <!-- Tiền -->
+    <EditText
+        android:id="@+id/amountInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Money"
+        android:inputType="number" />
+
+    <!-- Nút hành động -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:paddingTop="16dp">
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCEL" />
+    </LinearLayout>
+</LinearLayout>

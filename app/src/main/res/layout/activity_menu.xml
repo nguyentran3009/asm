@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F3EAF6"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_btec"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:textSize="18sp"
+        android:drawableLeft="@drawable/ic_home"
+        android:padding="16dp"
+        android:drawablePadding="10dp"
+        android:textColor="#512DA8" />
+
+    <!-- Add more sections like Expenses, Budget, etc. -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:drawableLeft="@drawable/ic_logout"
+        android:drawablePadding="10dp"
+        android:textColor="#512DA8" />
+</LinearLayout>
